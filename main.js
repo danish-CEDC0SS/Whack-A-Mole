@@ -1,3 +1,16 @@
+a=0;
+str=(document.cookie).split("; ");
+var obj={};
+for(var p=0;p<str.length;p++){
+      name=str[p].split("=")[0];
+      value=str[p].split("=")[1];
+      obj[name]=value;
+}
+if(obj.High==undefined){
+    obj.High=0;
+}
+document.getElementById("a32").innerHTML=obj.High;
+HighScore=obj.High;
 function fun1() {
     a=a+1;
     var x = document.getElementById("a30");
@@ -7,22 +20,6 @@ function fun1() {
         HighScore=a;
     }
 }
-a = 0;
-// function fun2() {
-//     a=0; b=21;
-//         runLoop = async () => {
-//         for (i = 0; i < 21; i++) {
-//             b=b-1;
-//             document.getElementById("a31").innerHTML=b+'s';
-//             y = document.display='block';
-//             await new Promise(resolve => setTimeout(resolve,700));
-//             y[j].style.display='none';
-//             console.log(j, '213');
-//         }
-//     }
-//         runLoop();
-// }
-HighScore=0;
 function fun2() {
     a=0; b=21; let c="";
     document.getElementById("a30").innerHTML="0";
@@ -45,6 +42,7 @@ function fun2() {
             console.log(j, '213');
             c=j;
         }
+        document.cookie="High="+HighScore;
     }
         runLoop();
 }
