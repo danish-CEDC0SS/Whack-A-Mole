@@ -1,0 +1,40 @@
+.a{
+    width: 60%;
+    height: 655px;
+    background-color: blueviolet;
+    /* padding: 20px; */
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: center; */
+}
+.ab{
+    width: 32%;
+    height: 200px;
+    float: left;
+    justify-content: center;
+    /* border: 1px solid black; */
+
+}
+.image{
+    width: 20%;
+    height: 90px;
+    margin-top: 110px ;
+    position: absolute;
+}
+.image2{
+    width: 85%;
+    height: 90px;
+    margin-top: 70px;
+    margin-left: 15px;
+}
+.a11{
+     display: none;
+}
+.b{
+    /* width: 20%; */
+    padding: 5px;
+    background-color: white;
+    margin-left: 10px;
+    display: inline-block
+}
